@@ -1,0 +1,21 @@
+/* --------- */
+/* Variables */
+/* --------- */
+
+:root {
+    --ff-primary: 'Raleway', sans-serif;
+  
+    --clr-purple-dark: #5D5FEF;
+    --clr-purple-medium: #A5A6F6;
+    --clr-purple-light: #CCCDF9;
+    --clr-red: #EB5757;
+    --clr-green: #27AE60;
+    --clr-black: #333333;
+    --clr-grey-medium: #828282;
+    --clr-grey-light: #BDBDBD;
+    --clr-grey-white: #F2F2F2;
+
+    --fs-h1: 2.5rem;
+    --fs-regular: 2rem;
+    --fs-small: 1.5rem;
+}
