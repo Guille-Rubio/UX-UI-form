@@ -1,11 +1,9 @@
-//lógica 
-
-//on password focus
-
 const destination = document.getElementById("passbox");
 const restrictionsBox = document.getElementsByClassName("restrictionsBox")[0];
+const termsCheckbox = document.getElementById("termsCheckbox")
 
 const password = document.getElementById("passwordInput")
+const SignUpButton = document.getElementById("SignUpButton")
 
 password.addEventListener("focus", () => {
     restrictionsBox.classList.remove("display-none")
@@ -75,4 +73,15 @@ password.addEventListener("focusout", () => {
 
 
 
+termsCheckbox.addEventListener("click",()=>{
+    if(termsCheckbox.checked===true){
+        //mostrar boton de registro
+
+    }else{
+
+        //boton de registro inactivo
+
+    }
+
+})
 
