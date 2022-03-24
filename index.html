@@ -53,9 +53,15 @@
                 <input type="text">
                 <span class="floating-label">Email</span>
             </div>
-            <div>
-                <input type="text">
+            <div id="passbox">
+                <input id="passwordInput" type="text">
                 <span class="floating-label">Contraseña</span>
+                <div class="restrictionsBox display-none">
+                    <p class="lengthRestriction">6 o mas carácteres</p>
+                    <p class="caseRestriction">letras y mayúsuculas y minúsculas</p>
+                    <p class="numRestriction">al menos un número</p>
+
+                </div>
             </div>
             <div>
                 <input type="text">

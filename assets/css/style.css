@@ -19,3 +19,7 @@
     --fs-regular: 2rem;
     --fs-small: 1.5rem;
 }
+
+.display-none{
+    display: none !important;
+}
