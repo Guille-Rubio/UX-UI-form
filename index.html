@@ -20,6 +20,7 @@
                 <img src="" alt="">
             </div>
             <div>
+
                 <img>
             </div>
             <div>
@@ -35,6 +36,7 @@
     <main>
         <form action="">
             <div>
+
                 <input type="text">
                 <span class="floating-label">Nombre</span>
             </div>
@@ -51,9 +53,15 @@
                 <input type="text">
                 <span class="floating-label">Email</span>
             </div>
-            <div>
-                <input type="text">
+            <div id="passbox">
+                <input id="passwordInput" type="text">
                 <span class="floating-label">Contraseña</span>
+                <div class="restrictionsBox display-none">
+                    <p class="lengthRestriction">6 o mas carácteres</p>
+                    <p class="caseRestriction">letras y mayúsuculas y minúsculas</p>
+                    <p class="numRestriction">al menos un número</p>
+
+                </div>
             </div>
             <div>
                 <input type="text">
@@ -69,10 +77,14 @@
                 <span class="floating-label">Número de teléfono</span>
             </div>
             <div>
+                <label for="terms"></label>
+                <input id ="termsCheckbox" name="terms" type="checkbox">
                 <!-- Aquí va el check "Acepto la política de privacidad y publicidad +info"-->
             </div>
             <div>
+                <button id="SignUpButton">Registrarse</button>
                 <!-- Aquí va botón Registrarse -->
+
             </div>
         </form>
     </main>
