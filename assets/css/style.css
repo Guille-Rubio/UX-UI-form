@@ -23,3 +23,20 @@
 .display-none{
     display: none !important;
 }
+
+span{
+    position:relative;
+    right:145px;
+    font-size:12px;
+}
+
+.textOnTop{
+    position:relative;
+    right:145px;
+    bottom:13px;
+    font-size: 0.5em;
+}
+
+input{
+    line-height: 30px;
+}

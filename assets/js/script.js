@@ -73,11 +73,11 @@ password.addEventListener("focusout", () => {
 
 
 
-termsCheckbox.addEventListener("click",()=>{
-    if(termsCheckbox.checked===true){
+termsCheckbox.addEventListener("click", () => {
+    if (termsCheckbox.checked === true) {
         //mostrar boton de registro
 
-    }else{
+    } else {
 
         //boton de registro inactivo
 
@@ -85,3 +85,25 @@ termsCheckbox.addEventListener("click",()=>{
 
 })
 
+
+
+
+// moving label on focus
+
+const input = document.getElementsByTagName("input");//buscar mejor selector
+const label = document.getElementsByTagName("span");//buscar mejores selectores
+
+for (let i = 0; i < input.length; i++) {
+
+input[i].addEventListener("focus", () => {
+    label[i].classList.add("textOnTop")
+    
+})
+
+input[i].addEventListener("focusout", () => {
+    if (input[i].value === "") {
+        label[i].classList.remove("textOnTop")
+    }
+})
+
+}
