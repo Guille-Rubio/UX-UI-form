@@ -26,17 +26,18 @@
 
 span{
     position:relative;
-    right:145px;
+    right:60%;
     font-size:12px;
 }
 
 .textOnTop{
     position:relative;
-    right:145px;
+    right:60%;
     bottom:13px;
     font-size: 0.5em;
 }
 
 input{
     line-height: 30px;
+    width:60%;
 }
