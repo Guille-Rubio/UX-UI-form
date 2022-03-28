@@ -1,9 +1,10 @@
 const destination = document.getElementById("passbox");
 const restrictionsBox = document.getElementsByClassName("restrictionsBox")[0];
-const termsCheckbox = document.getElementById("termsCheckbox")
+const termsCheckbox = document.getElementById("termsCheckbox");
 
-const password = document.getElementById("passwordInput")
-const SignUpButton = document.getElementById("SignUpButton")
+const password = document.getElementById("passwordInput");
+const SignUpButton = document.getElementById("SignUpButton");
+const safetyBar = document.getElementById("safetyBarFront");
 
 password.addEventListener("focus", () => {
     restrictionsBox.classList.remove("display-none")
@@ -29,15 +30,15 @@ password.addEventListener("input", () => {
     }
 
     if (hasLowerCase && hasUpperCase) {
-        caseRestriction.style.color = "green"
+        caseRestriction.style.color = "green";
     } else {
-        caseRestriction.style.color = "gray"
+        caseRestriction.style.color = "gray";
     }
 
     if (hasNumber) {
-        numRestriction.style.color = "green"
+        numRestriction.style.color = "green";
     } else {
-        numRestriction.style.color = "gray"
+        numRestriction.style.color = "gray";
     }
 
     const passSafety = [];
@@ -49,18 +50,29 @@ password.addEventListener("input", () => {
 
     if (result.length > 3) {
         console.log("all good")
+        safetyBar.style.width = "200px";
+        safetyBar.style.backgroundColor = "green";
+
 
     } else if (result.length > 2) {
         console.log("three ok")
+        safetyBar.style.width = "150px";
+        safetyBar.style.backgroundColor = "green";
 
     } else if (result.length > 1) {
         console.log("two ok")
+        safetyBar.style.width = "100px";
+        safetyBar.style.backgroundColor = "green";
 
     } else if (result.length > 0) {
         console.log("one ok")
+        safetyBar.style.width = "50px";
+        safetyBar.style.backgroundColor = "yellow";
 
     } else {
         console.log("all wrong")
+        safetyBar.style.width = "15px";
+        safetyBar.style.backgroundColor = "red";
     }
 
 })
@@ -95,15 +107,23 @@ const label = document.getElementsByTagName("span");//buscar mejores selectores
 
 for (let i = 0; i < input.length; i++) {
 
-input[i].addEventListener("focus", () => {
-    label[i].classList.add("textOnTop")
-    
-})
+    input[i].addEventListener("focus", () => {
+        label[i].classList.add("textOnTop")
 
-input[i].addEventListener("focusout", () => {
-    if (input[i].value === "") {
-        label[i].classList.remove("textOnTop")
-    }
-})
+    })
+
+    input[i].addEventListener("focusout", () => {
+        if (input[i].value === "") {
+            label[i].classList.remove("textOnTop")
+        }
+    })
 
 }
+
+
+
+
+
+
+
+
