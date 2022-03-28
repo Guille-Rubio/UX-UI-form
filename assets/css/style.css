@@ -26,18 +26,43 @@
 
 span{
     position:relative;
-    right:60%;
+    right: 72%;
     font-size:12px;
 }
 
 .textOnTop{
     position:relative;
-    right:60%;
+    right:72%;
     bottom:13px;
     font-size: 0.5em;
 }
 
 input{
     line-height: 30px;
-    width:60%;
+    width:72%;
+    margin:10px;
+}
+
+#safetyBar{
+    position:relative;
+}
+
+#safetyBarFront{
+    position:absolute;
+    top:0px;
+    left:0px;
+    min-width:40px;
+    height:5px;
+    border-radius: 15px;
+}
+
+#safetyBarBack{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    background-color: lightgray;
+    height:5px;
+    z-index: -1;
+
 }
