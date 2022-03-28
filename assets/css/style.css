@@ -20,6 +20,10 @@
     --fs-small: 1.5rem;
 }
 
+body {
+    font-family: var(--ff-primary);
+}
+
 .display-none{
     display: none !important;
 }
@@ -37,10 +41,14 @@ span{
     font-size: 0.5em;
 }
 
-input{
+input,
+select {
     line-height: 30px;
     width:72%;
     margin:10px;
+    border: 1px solid var(--clr-grey-light);
+    border-radius: 15px;
+    font-family: var(--ff-primary);
 }
 
 #safetyBar{
