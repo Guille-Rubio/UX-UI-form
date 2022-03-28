@@ -60,14 +60,25 @@ h2 {
     text-align: center;
 }
 
+p{
+    margin-bottom:8px;
+}
+
 .display-none {
     display: none !important;
+}
+
+form{
+    margin:auto;
+    width:80vw;
+    
 }
 
 span {
     position: relative;
     right: 72%;
     font-size: 12px;
+    
 }
 
 .textOnTop {
@@ -81,10 +92,15 @@ input,
 select {
     line-height: 30px;
     width: 72%;
-    margin: 10px;
+    margin-top: 10px;
     border: 1px solid var(--clr-grey-light);
     border-radius: 5px;
     font-family: var(--ff-primary);
+    
+}
+
+.restrictionsBox{
+    margin-left:15px;
 }
 
 #safetyBar {
@@ -111,8 +127,22 @@ select {
 
 }
 
+.terms-box{
+    display:flex;
+    flex-wrap: wrap; 
+    align-items: center;  
+    margin:10px;
+}
+
+#termsCheckbox{
+    width:20px;
+    margin:0px;
+}
+
 #SignUpButton {
-    width: 90%;
+    display:block;
+    margin:auto;
+    width:80%;
     background-color: var(--clr-purple-dark);
     color: #ffffff;
     border-radius: 5px;
@@ -121,3 +151,4 @@ select {
     font-family: var(--ff-primary);
     font-size: 16px;
 }
+
