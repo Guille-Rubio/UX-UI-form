@@ -17,9 +17,39 @@
 
 }
 
+header {
+    background-color: #5D5FEF;
+}
+
+.back-arrow {
+    height: 2vh;
+    min-height: 20px;
+    margin-left: 15px;
+}
+
+.logo {
+    height: 2vh;
+    min-height: 40px;
+
+}
+
+.menu-burguer {
+    height: 2vh;
+    min-height: 35px;
+    ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 body {
     font-family: var(--ff-primary);
     background-color: var(--clr-grey-white);
+    margin:0px;
 }
 
 h2 {
