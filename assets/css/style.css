@@ -4,7 +4,7 @@
 
 :root {
     --ff-primary: 'Raleway', sans-serif;
-  
+
     --clr-purple-dark: #5D5FEF;
     --clr-purple-medium: #A5A6F6;
     --clr-purple-light: #CCCDF9;
@@ -22,55 +22,72 @@
 
 body {
     font-family: var(--ff-primary);
+    background-color: var(--clr-grey-white);
 }
 
-.display-none{
+h2 {
+    color: var(--clr-purple-dark);
+    text-align: center;
+}
+
+.display-none {
     display: none !important;
 }
 
-span{
-    position:relative;
+span {
+    position: relative;
     right: 72%;
-    font-size:12px;
+    font-size: 12px;
 }
 
-.textOnTop{
-    position:relative;
-    right:72%;
-    bottom:13px;
+.textOnTop {
+    position: relative;
+    right: 72%;
+    bottom: 13px;
     font-size: 0.5em;
 }
 
 input,
 select {
     line-height: 30px;
-    width:72%;
-    margin:10px;
+    width: 72%;
+    margin: 10px;
     border: 1px solid var(--clr-grey-light);
-    border-radius: 15px;
+    border-radius: 5px;
     font-family: var(--ff-primary);
 }
 
-#safetyBar{
-    position:relative;
+#safetyBar {
+    position: relative;
 }
 
-#safetyBarFront{
-    position:absolute;
-    top:0px;
-    left:0px;
-    min-width:40px;
-    height:5px;
+#safetyBarFront {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 40px;
+    height: 5px;
     border-radius: 15px;
 }
 
-#safetyBarBack{
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
+#safetyBarBack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
     background-color: lightgray;
-    height:5px;
+    height: 5px;
     z-index: -1;
 
+}
+
+#SignUpButton {
+    width: 90%;
+    background-color: var(--clr-purple-dark);
+    color: #ffffff;
+    border-radius: 5px;
+    height: 56px;
+    border: 0px solid transparent;
+    font-family: var(--ff-primary);
+    font-size: 16px;
 }
