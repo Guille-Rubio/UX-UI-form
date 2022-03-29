@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <header>
         <nav>
             <div>
-                <img class ="back-arrow" src="./assets/img/back-arrow.svg" alt="back arrow">
+                <img class="back-arrow" src="./assets/img/back-arrow.svg" alt="back arrow">
             </div>
             <div>
 
@@ -53,8 +53,10 @@
                 </select>
             </div>
             <div>
-                <input type="text">
+                <input type="text" id="emailInput">
                 <span class="floating-label">Email</span>
+                <p id="emailValidationMessage" class="display-none">&#9432 Introduce una cuenta de correo electrónico válida
+                    para tu cuenta CareSwitch</p>
             </div>
             <div id="passbox">
                 <input id="passwordInput" type="text">
@@ -81,11 +83,11 @@
                 <input type="text">
                 <span class="floating-label">Número de teléfono</span>
             </div>
-            <div>
-                <label for="termsCheckbox" class="radio_label">Acepto la política de privacidad y publicidad
-                    <strong>+info</strong>
-                    <input id="termsCheckbox" name="terms" type="radio">
-                </label>
+            <div class="terms-box">
+                <input id="termsCheckbox" name="terms" type="checkbox">
+                <label for="terms">Acepto la política de privacidad y publicidad <a href="#">+info</a></label>
+
+                <!-- Aquí va el check "Acepto la política de privacidad y publicidad +info"-->
             </div>
             <div>
                 <button id="SignUpButton">Registrarse</button>
