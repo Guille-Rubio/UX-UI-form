@@ -2,6 +2,7 @@
 /* Variables */
 /* --------- */
 
+
 :root {
     --ff-primary: 'Raleway', sans-serif;
 
@@ -33,13 +34,11 @@ header {
 .logo {
     height: 2vh;
     min-height: 40px;
-
 }
 
 .menu-burguer {
     height: 2vh;
     min-height: 35px;
-    ;
 }
 
 nav {
@@ -68,17 +67,18 @@ p{
     display: none !important;
 }
 
+
 form{
     margin:auto;
     width:80vw;
-    
 }
+
+
 
 span {
     position: relative;
     right: 72%;
-    font-size: 12px;
-    
+    font-size: 12px;    
 }
 
 .textOnTop {
@@ -95,8 +95,12 @@ select {
     margin-top: 10px;
     border: 1px solid var(--clr-grey-light);
     border-radius: 5px;
-    font-family: var(--ff-primary);
-    
+    font-family: var(--ff-primary);  
+}
+
+#emailValidationMessage{
+    font-size: 8px;
+    color:red;
 }
 
 .restrictionsBox{
@@ -124,7 +128,6 @@ select {
     background-color: lightgray;
     height: 5px;
     z-index: -1;
-
 }
 
 .terms-box{
@@ -152,3 +155,22 @@ select {
     font-size: 16px;
 }
 
+#backHomeButton{
+    display:block;
+    margin:auto;
+    width:80%;
+    background-color: var(--clr-purple-dark);
+    color: #ffffff;
+    border-radius: 5px;
+    height: 56px;
+    border: 0px solid transparent;
+    font-family: var(--ff-primary);
+    font-size: 16px;
+}
+
+#accountCreatedImg{
+    width:350px;
+    margin:auto;
+    margin:20px;
+
+}
